@@ -1,0 +1,34 @@
+{
+  "name": "stargate256",
+  "version": "1.0.0",
+  "description": "Stargate with 256 symbols, used as a metaphor for an encryption key like the Engima",
+  "main": "index.ts",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FreddieMercurial/Stargate256.git"
+  },
+  "author": "FreddieMercurial",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FreddieMercurial/Stargate256/issues"
+  },
+  "homepage": "https://github.com/FreddieMercurial/Stargate256#readme",
+  "devDependencies": {
+    "@types/node": "^18.7.13",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^22.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "typescript": "^4.8.2"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.5",
+    "mermaid": "^9.1.6",
+    "redux": "^4.2.0"
+  }
+}
