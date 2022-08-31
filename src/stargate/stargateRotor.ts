@@ -6,6 +6,8 @@ import { Readable, Writable } from 'stream';
 import StargateMachine from "./stargateMachine";
 import RotorConfiguration from "./rotorConfiguration";
 import { randomUUID } from "crypto";
+import ObjectQuanta from "./objectQuanta";
+import TransformedQuanta from "./transformedQuanta";
 
 export default class StargateRotor {
     public readonly id: string;
@@ -20,11 +22,10 @@ export default class StargateRotor {
     private isStargateOpen(): boolean {
         return this.stargate.isStargateOpen();
     }
-    public processData(data: Buffer): Buffer {
+    public receiveQuanta(data: Buffer): Buffer {
         if (!this.isStargateOpen()) {
             throw new Error(`Stargate not open`);
         }
         throw new Error(`Not implemented`);
-        return data;
     }
 }

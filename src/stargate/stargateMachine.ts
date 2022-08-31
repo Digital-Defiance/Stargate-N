@@ -134,7 +134,7 @@ export default class StargateMachine {
             // write the data to the input stream of the rotor
             this.inputStreams[i]?.push(stepData);
             // transform the data
-            const output = this.rotors[i].processData(stepData);
+            const output = this.rotors[i].receiveQuanta(stepData);
             // write the data to the output stream of the rotor
             this.outputStreams[i]?.write(output);
             // replace the data we s with the transformed data, 
