@@ -6,17 +6,20 @@ import { Readable, Writable } from 'stream';
 import StargateMachine from "./stargateMachine";
 import RotorConfiguration from "./rotorConfiguration";
 import { randomUUID } from "crypto";
-import ObjectQuanta from "./objectQuanta";
-import TransformedQuanta from "./transformedQuanta";
+import StargateOperationType from "./stargateOperationType";
 
 export default class StargateRotor {
     public readonly id: string;
     public readonly stargate: StargateMachine;
     public readonly configuration: RotorConfiguration;
+    public readonly operations: Array<StargateOperationType>;
     public constructor(stargate: StargateMachine, configuration: RotorConfiguration) {
         this.id = randomUUID();
         this.stargate = stargate;
         this.configuration = configuration;
+        this.operations = [
+            StargateOperationType.NoOperation,
+        ]; // TODO: get from configuration
     }
 
     private isStargateOpen(): boolean {
