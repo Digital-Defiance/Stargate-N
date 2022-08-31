@@ -55,6 +55,10 @@ Each gate/rotor may be composed of any combination of these components:
 The originating gate must have a computer to do that decomposition/representation. It is often integrated into the code of all gates so that every gate may originate. A relay (no-op) gate, stream operation only gate, or one-way encoder or decoder gate could also exist. (gate without encoding or decoding capability- only raw manipulation)
 
 Each rotor/gate may do any manner of optical/electromagnetic transformations in the analog domain.
+* Currently, the design is heading towards having a defined set of operations that each rotor can do.
+  Each rotor can do any or all of the operations, but for simplicity, we will only allow each operation/chevron
+  to be engaged once per rotor.
+  Use as many or as few rotors as necessary to accomplish the desired operation(s). The more rotors, the more delay.
 
 [https://en.wikipedia.org/wiki/Ray_transfer_matrix_analysis](https://en.wikipedia.org/wiki/Ray_transfer_matrix_analysis)
 [https://en.wikipedia.org/wiki/S-matrix](https://en.wikipedia.org/wiki/Ray_transfer_matrix_analysis)
