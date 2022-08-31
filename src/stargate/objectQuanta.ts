@@ -10,16 +10,17 @@ export default class ObjectQuanta {
     public readonly frequency: number;
     public readonly emState: Complex;
     public readonly spin: number;
-    public constructor(associatedObject: QuantizedObject, sequence: bigint, checksum: string) {
+    public constructor(associatedObject: QuantizedObject, sequence: bigint, frequency: number, emState: Complex, spin: number) {
         const date = new Date();
         this.id = randomUUID();
         this.associatedObject = associatedObject;
         this.sequence = sequence;
-        this.checksum = checksum;
         this.creationDate = date;
         // TODO: add quanta physical properties (eg spin, frequency, etc)
-        this.frequency = 0;
-        this.emState = complex(0, 0);
-        this.spin = 0; // negative spin?
+        this.frequency = frequency;
+        this.emState = emState;
+        this.spin = spin; // negative spin?
+        // TODO: implement checksum
+        this.checksum = "TODO";
     }
 }
