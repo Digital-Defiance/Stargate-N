@@ -60,11 +60,13 @@ Each rotor/gate may do any manner of optical/electromagnetic transformations in 
   to be engaged once per rotor.
   Use as many or as few rotors as necessary to accomplish the desired operation(s). The more rotors, the more delay.
 
-[https://en.wikipedia.org/wiki/Ray_transfer_matrix_analysis](https://en.wikipedia.org/wiki/Ray_transfer_matrix_analysis)
-[https://en.wikipedia.org/wiki/S-matrix](https://en.wikipedia.org/wiki/Ray_transfer_matrix_analysis)
 
-In physics, the S-matrix or scattering matrix relates the initial state and the final state of a physical system undergoing a scattering process.
+## References
+  * [https://en.wikipedia.org/wiki/Ray_transfer_matrix_analysis](https://en.wikipedia.org/wiki/Ray_transfer_matrix_analysis)
+  * [https://en.wikipedia.org/wiki/S-matrix](https://en.wikipedia.org/wiki/Ray_transfer_matrix_analysis)
+    In physics, the S-matrix or scattering matrix relates the initial state and the final state of a physical system undergoing a scattering process.
 
+## Notes
 so maybe we'll have a way to do both
 we'll define operations to assign to symbols
 and we'll also define an S-Box for each rotor
