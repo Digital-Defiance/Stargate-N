@@ -1,21 +1,21 @@
 {
-  "name": "stargate256",
+  "name": "stargate-n",
   "version": "1.0.0",
-  "description": "Stargate with 256 symbols, used as a metaphor for an encryption key like the Engima",
+  "description": "Stargate/Quantum Enigma with N symbols, used as a metaphor for an encryption key like the Engima",
   "main": "index.ts",
   "scripts": {
     "test": "npm run test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FreddieMercurial/Stargate256.git"
+    "url": "git+https://github.com/FreddieMercurial/Stargate-N.git"
   },
   "author": "FreddieMercurial",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/FreddieMercurial/Stargate256/issues"
+    "url": "https://github.com/FreddieMercurial/Stargate-N/issues"
   },
-  "homepage": "https://github.com/FreddieMercurial/Stargate256#readme",
+"homepage": "https://github.com/FreddieMercurial/Stargate-N#readme",
   "devDependencies": {
     "@types/node": "^18.7.13",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
