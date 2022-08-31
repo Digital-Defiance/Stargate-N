@@ -7,6 +7,8 @@ import StargateMachine from "./stargateMachine";
 import RotorConfiguration from "./rotorConfiguration";
 import { randomUUID } from "crypto";
 import StargateOperationType from "./stargateOperationType";
+import { getChevronColor } from "./namedHsvColorChevronMap";
+import { NamedHsvColorChevronType } from "./namedHsvColorChevronType";
 
 export default class StargateRotor {
     public readonly id: string;
@@ -19,6 +21,7 @@ export default class StargateRotor {
      * total radians per chevron is 2 * Math.PI / chevronList.length
      */
     public readonly engagedChevrons: Array<HSVColorChevron>;
+    public readonly radiansPerChevron: number;
     public constructor(stargate: StargateMachine, configuration: RotorConfiguration) {
         this.id = randomUUID();
         this.stargate = stargate;
@@ -27,16 +30,23 @@ export default class StargateRotor {
             StargateOperationType.NoOperation,
         ]; // TODO: get from configuration
         this.chevronList = [
-            new HSVColorChevron({ hue: 0, saturation: 0, value: 0 }), // no operation. TODO: DRY/shortcut
+            getChevronColor(NamedHsvColorChevronType.Black), // no operation.
         ]; // TODO: get from configuration
+        this.radiansPerChevron = 2 * Math.PI / this.chevronList.length;
         this.engagedChevrons = [];
     }
 
     private isStargateOpen(): boolean {
         return this.stargate.isStargateOpen();
     }
+    public canReceive(): boolean {
+        return this.isStargateOpen();
+    }
+    public canSend(): boolean {
+        return this.isStargateOpen();
+    }
     public receiveQuanta(data: Buffer): Buffer {
-        if (!this.isStargateOpen()) {
+        if (!this.canReceive()) {
             throw new Error(`Stargate not open`);
         }
         throw new Error(`Not implemented`);
