@@ -65,6 +65,12 @@ Each rotor/gate may do any manner of optical/electromagnetic transformations in 
   * [https://en.wikipedia.org/wiki/Ray_transfer_matrix_analysis](https://en.wikipedia.org/wiki/Ray_transfer_matrix_analysis)
   * [https://en.wikipedia.org/wiki/S-matrix](https://en.wikipedia.org/wiki/Ray_transfer_matrix_analysis)
     In physics, the S-matrix or scattering matrix relates the initial state and the final state of a physical system undergoing a scattering process.
+  * ReduxJS: https://redux.js.org/
+  * GitHub CoPilot: https://copilot.github.com/
+  * Visual Studio Code: https://code.visualstudio.com/
+  * Turborepo: https://turborepo.org/
+  * ReactJS: https://reactjs.org/
+  * Yarn: https://yarnpkg.com/
 
 ## Notes
 ```
