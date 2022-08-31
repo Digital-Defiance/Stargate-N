@@ -1,7 +1,7 @@
 import { randomUUID } from "crypto";
 import ObjectQuanta from "./objectQuanta";
-import QuantizedObject from "./quantizedObject";
 
+/** A Transformed Quanta is just a quanta that has undergone an operation and maintains a reference to the previous state */
 export default class TransformedQuanta extends ObjectQuanta
 {
     public override readonly id: string;
