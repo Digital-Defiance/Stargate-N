@@ -13,6 +13,12 @@ export default class StargateRotor {
     public readonly stargate: StargateMachine;
     public readonly configuration: RotorConfiguration;
     public readonly operations: Array<StargateOperationType>;
+    public readonly chevronList: Array<HSVColorChevron>;
+    /**
+     * list of chevrons in order, starting at 0 degrees.
+     * total radians per chevron is 2 * Math.PI / chevronList.length
+     */
+    public readonly engagedChevrons: Array<HSVColorChevron>;
     public constructor(stargate: StargateMachine, configuration: RotorConfiguration) {
         this.id = randomUUID();
         this.stargate = stargate;
@@ -20,6 +26,10 @@ export default class StargateRotor {
         this.operations = [
             StargateOperationType.NoOperation,
         ]; // TODO: get from configuration
+        this.chevronList = [
+            new HSVColorChevron({ hue: 0, saturation: 0, value: 0 }), // no operation. TODO: DRY/shortcut
+        ]; // TODO: get from configuration
+        this.engagedChevrons = [];
     }
 
     private isStargateOpen(): boolean {
