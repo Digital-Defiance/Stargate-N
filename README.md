@@ -67,11 +67,13 @@ Each rotor/gate may do any manner of optical/electromagnetic transformations in 
     In physics, the S-matrix or scattering matrix relates the initial state and the final state of a physical system undergoing a scattering process.
 
 ## Notes
+```
 so maybe we'll have a way to do both
 we'll define operations to assign to symbols
 and we'll also define an S-Box for each rotor
 everything will be shifted by any engaged symbols/chevrons
 and then run through the s-box
+```
 
 -----------
 ## SAVE BELOW THIS LINE
