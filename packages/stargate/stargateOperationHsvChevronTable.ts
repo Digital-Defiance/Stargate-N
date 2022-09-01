@@ -1,7 +1,7 @@
 import HSVColorChevron from "./hsvColorChevron";
 import { getChevronColor } from "./namedHsvColorChevronMap";
 import { NamedHsvColorChevronType } from "./namedHsvColorChevronType";
-import StargateOperationType from "./stargateOperationType";
+import StargateOperationType from "./rotor/operations/type";
 
 export const StargateOperationHsvChevronTable: Map<HSVColorChevron, StargateOperationType> = new Map<HSVColorChevron, StargateOperationType>([
     [getChevronColor(NamedHsvColorChevronType.Black), StargateOperationType.NoOperation],

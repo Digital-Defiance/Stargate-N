@@ -1,8 +1,8 @@
 import { complex } from "mathjs";
-import ObjectQuanta from "./objectQuanta";
-import TransformedQuanta from "./transformedQuanta";
+import Quanta from "../../quanta/quanta";
+import TransformedQuanta from "../../quanta/transformedQuanta";
 
-export default function swapIJ(quanta: ObjectQuanta | TransformedQuanta): TransformedQuanta {
+export default function swapIJ(quanta: Quanta | TransformedQuanta): TransformedQuanta {
     return new TransformedQuanta(
         quanta,
         quanta.frequency,

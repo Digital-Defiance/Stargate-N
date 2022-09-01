@@ -1,7 +1,7 @@
 import { randomUUID } from "crypto";
-import QuantizedObject from "./quantizedObject";
-import { complex, Complex } from "mathjs";
-export default class ObjectQuanta {
+import QuantizedObject from "../quantizedObject";
+import { Complex } from "mathjs";
+export default class Quanta {
     public readonly id: string;
     public readonly associatedObject: QuantizedObject;
     public readonly sequence: bigint;

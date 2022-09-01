@@ -1,5 +1,5 @@
 import { randomUUID } from "crypto";
-import StargateRotor from "./stargateRotor";
+import StargateRotor from "./rotor/rotor";
 import { configureStore, EnhancedStore } from '@reduxjs/toolkit'
 
 export default class StargateMachine {
