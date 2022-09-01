@@ -14,7 +14,7 @@ const reverseMap = new Map<StargateOperationType, HSVColorChevron>();
 StargateOperationHsvChevronTable.forEach((value, key) => {
     const operation = value;
     const chevron = key;
-    StargateOperationsReverseTable.set(operation, chevron);
+    reverseMap.set(operation, chevron);
 });
 
 export const StargateOperationsReverseTable: Map<StargateOperationType, HSVColorChevron> = reverseMap;
