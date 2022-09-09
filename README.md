@@ -59,7 +59,8 @@ Each rotor/gate may do any manner of optical/electromagnetic transformations in 
   Each rotor can do any or all of the operations, but for simplicity, we will only allow each operation/chevron
   to be engaged once per rotor.
   Use as many or as few rotors as necessary to accomplish the desired operation(s). The more rotors, the more delay.
-
+  
+Todo: Use Quantum Tensors
 
 ## References
   * [https://en.wikipedia.org/wiki/Ray_transfer_matrix_analysis](https://en.wikipedia.org/wiki/Ray_transfer_matrix_analysis)
@@ -71,6 +72,7 @@ Each rotor/gate may do any manner of optical/electromagnetic transformations in 
   * Turborepo: https://turborepo.org/
   * ReactJS: https://reactjs.org/
   * Yarn: https://yarnpkg.com/
+  * https://github.com/FreddieMercurial-forks/quantum-tensors / https://github.com/Quantum-Flytrap/quantum-tensors
 
 ## Notes
 ```
