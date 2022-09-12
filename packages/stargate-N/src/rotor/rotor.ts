@@ -1,14 +1,14 @@
-import HSVColorChevron from "./hsvColorChevron";
+import HSVColorChevron from "../hsvColorChevron";
 
 import * as fs from 'fs';
 import * as util from 'util'
 import { Readable, Writable } from 'stream';
-import StargateMachine from "./stargateMachine";
-import RotorConfiguration from "./rotorConfiguration";
+import StargateMachine from "../stargateMachine";
+import RotorConfiguration from "../rotor/configuration";
 import { randomUUID } from "crypto";
-import StargateOperationType from "./stargateOperationType";
-import { getChevronColor } from "./namedHsvColorChevronMap";
-import { NamedHsvColorChevronType } from "./namedHsvColorChevronType";
+import StargateOperationType from "./operations/type";
+import { getChevronColor } from "../namedHsvColorChevronMap";
+import { NamedHsvColorChevronType } from "../namedHsvColorChevronType";
 
 export default class StargateRotor {
     public readonly id: string;
