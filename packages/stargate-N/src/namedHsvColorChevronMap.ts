@@ -1,5 +1,5 @@
 import HSVColorChevron from "./hsvColorChevron";
-import { NamedHsvColorChevronType, NamedHsvColorChevrons } from "./namedHsvColorChevronType";
+import { NamedHsvColorChevronType } from "./namedHsvColorChevronType";
 
 export const NamedHsvColorChevronMap = new Map<NamedHsvColorChevronType, HSVColorChevron>([
     [NamedHsvColorChevronType.Black, new HSVColorChevron({hue: 0, saturation: 0, value: 0})],

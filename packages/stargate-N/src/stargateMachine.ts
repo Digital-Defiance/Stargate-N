@@ -62,4 +62,9 @@ export default class StargateMachine {
         this.channelOpen = false;
         return this;
     }
+    public foo() {
+       if (this.stateMachine === undefined) {
+           return;
+       }
+    }
 }
