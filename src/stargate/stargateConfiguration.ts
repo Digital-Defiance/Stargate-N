@@ -1,4 +1,4 @@
-import RotorConfiguration from "./rotorConfiguration";
+import RotorConfiguration from "./rotor/configuration";
 
 export default class StargateConfiguration {
     public readonly rotorConfigurations: Array<RotorConfiguration>;

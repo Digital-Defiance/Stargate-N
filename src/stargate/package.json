@@ -1,0 +1,32 @@
+{
+  "name": "stargate",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./index.tsx",
+  "types": "./index.tsx",
+  "scripts": {
+    "lint": "eslint *.ts*"
+  },
+  "dependencies": {
+    "next": "12.2.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "@reduxjs/toolkit": "^1.8.5",
+    "mathjs": "^11.1.0",
+    "mermaid": "^9.1.6",
+    "redux": "^4.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "eslint": "7.32.0",
+    "eslint-config-custom": "*",
+    "next-transpile-modules": "9.0.0",
+    "tsconfig": "*",
+    "@types/node": "^17.0.12",
+    "@types/react": "17.0.48",
+    "typescript": "^4.5.3"
+  },
+  "extends": "tsconfig/react-library.json",
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"]
+}

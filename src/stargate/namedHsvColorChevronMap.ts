@@ -14,7 +14,7 @@ export function getChevronColor(name: NamedHsvColorChevronType): HSVColorChevron
 }
 
 export function lookupChevronColorName(chevron: HSVColorChevron): NamedHsvColorChevronType {
-    let result = null;
+    let result: NamedHsvColorChevronType | null = null;
     NamedHsvColorChevronMap.forEach((value: HSVColorChevron, key: NamedHsvColorChevronType) => {
         if (value.hue === chevron.hue && value.saturation === chevron.saturation && value.value === chevron.value) {
             result = key;
