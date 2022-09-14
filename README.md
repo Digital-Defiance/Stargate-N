@@ -73,6 +73,14 @@ Todo: Use Quantum Tensors
   * ReactJS: https://reactjs.org/
   * Yarn: https://yarnpkg.com/
   * https://github.com/FreddieMercurial-forks/quantum-tensors / https://github.com/Quantum-Flytrap/quantum-tensors
+  
+## Idea
+The SimPHoTONS
+![19fcfc8c-19e0-4099-a930-cd41b73cddad](https://user-images.githubusercontent.com/3766240/190256990-da92881f-448d-4587-816f-c60b6d8136e1.jpg)
+A Quantum Photonic Simulator Puzzle Game
+
+Something simple like Hen Fox Farmer type thing?
+Character named Quark (Bark) and ?? for (Lisa)
 
 ## Notes
 ```
