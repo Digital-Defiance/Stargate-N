@@ -1,12 +1,11 @@
 import HSVColorChevron from "./hsvColorChevron";
 import { getChevronColor } from "./namedHsvColorChevronMap";
 import { NamedHsvColorChevronType } from "./namedHsvColorChevronType";
-import StargateOperationType from "./rotor/operations/type";
+import StargateOperationType from "./rotor/operations/stargateOperationType";
 
 export const StargateOperationHsvChevronTable: Map<HSVColorChevron, StargateOperationType> = new Map<HSVColorChevron, StargateOperationType>([
     [getChevronColor(NamedHsvColorChevronType.Black), StargateOperationType.NoOperation],
-    [new HSVColorChevron({ hue: (4 / 360), saturation: 1.0, value: 1.0 }), StargateOperationType.Zero],
-    [new HSVColorChevron({ hue: (4 / 360) * 2, saturation: 1.0, value: 1.0 }), StargateOperationType.SwapIJ],
+    //[new HSVColorChevron({ hue: (4 / 360) * 2, saturation: 1.0, value: 1.0 }), StargateOperationType.QuantumH],
 ]);
 
 // reverse lookup

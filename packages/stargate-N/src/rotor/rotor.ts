@@ -2,7 +2,7 @@ import HSVColorChevron from "../hsvColorChevron";
 import StargateMachine from "../stargateMachine";
 import RotorConfiguration from "../rotor/configuration";
 import { randomUUID } from "crypto";
-import StargateOperationType from "./operations/type";
+import StargateOperationType from "./operations/stargateOperationType";
 import { getChevronColor } from "../namedHsvColorChevronMap";
 import { NamedHsvColorChevronType } from "../namedHsvColorChevronType";
 
