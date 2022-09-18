@@ -1,5 +1,5 @@
 import { randomUUID } from "crypto";
-import StargateRotor from "./rotor/rotor";
+import StargateRotor from "./rotor/stargateRotor";
 import { configureStore, EnhancedStore } from '@reduxjs/toolkit'
 import { Photons } from "quantum-tensors";
 
