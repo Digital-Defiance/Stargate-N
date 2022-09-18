@@ -1,6 +1,14 @@
 import { randomUUID } from "crypto";
 import QuantizedObject from "../quantizedObject";
 import { Photons } from "quantum-tensors";
+/**
+ * @description A Quanta is the smallest unit of information that can be sent through the stargate.
+ * It may contain several photons entangled.
+ * It is associated with a quantum object.
+ * It is identified by a unique id.
+ * It is identified by a sequence number.
+ * It is identified by a timestamp.
+ */
 export default class Quanta {
     public readonly id: string;
     public readonly associatedObject: QuantizedObject;

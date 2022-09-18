@@ -1,7 +1,8 @@
 import Quanta from "./quanta";
 import { Photons } from "quantum-tensors";
 
-/** A Transformed Quanta is just a quanta that has undergone an operation and maintains a reference to the previous state */
+/** 
+ * @description A Transformed Quanta is just a quanta that has undergone an operation and maintains a reference to the previous state */
 export default class TransformedQuanta extends Quanta
 {
     public readonly originalId: string;
