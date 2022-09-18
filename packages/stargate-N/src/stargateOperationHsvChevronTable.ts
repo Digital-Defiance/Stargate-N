@@ -3,6 +3,11 @@ import { getChevronColor } from "./namedHsvColorChevronMap";
 import { NamedHsvColorChevronType } from "./namedHsvColorChevronType";
 import StargateOperationType from "./rotor/operations/stargateOperationType";
 
+/**
+ * @description This is the list of all possible chevrons and their corresponding operations
+ * TODO: in stargate there were other machines with other chevrons... maybe we should have a separate table for each rotor class?
+ * could still use the default
+ */
 export const StargateOperationHsvChevronTable: Map<HSVColorChevron, StargateOperationType> = new Map<HSVColorChevron, StargateOperationType>([
     [getChevronColor(NamedHsvColorChevronType.Black), StargateOperationType.NoOperation],
     //[new HSVColorChevron({ hue: (4 / 360) * 2, saturation: 1.0, value: 1.0 }), StargateOperationType.QuantumH],

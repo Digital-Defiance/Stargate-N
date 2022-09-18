@@ -1,3 +1,8 @@
+/**
+ * @description Rather than using cryptic icons to represent each rotor operation, we use a color wheel.
+ * Each color represents a different operation.
+ * The specific energy or frequency of the color may end up being used in the operation. TODO.
+ */
 export default class HSVColorChevron {
     public readonly hue: number;
     public readonly saturation: number;

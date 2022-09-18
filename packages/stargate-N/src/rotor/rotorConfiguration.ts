@@ -1,7 +1,7 @@
 import { randomUUID } from "crypto";
 import HSVColorChevron from "../hsvColorChevron";
 
-/** This probably needs to involve a redux store */
+/** This needs to get loaded into the redux store */
 export default class RotorConfiguration {
     public readonly id: string = randomUUID();
     public readonly chevrons: Array<HSVColorChevron>;

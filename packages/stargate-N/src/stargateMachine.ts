@@ -1,14 +1,31 @@
 import { randomUUID } from "crypto";
 import StargateRotor from "./rotor/rotor";
 import { configureStore, EnhancedStore } from '@reduxjs/toolkit'
+import { Photons } from "quantum-tensors";
 
+/**
+ * @description A stargate machine is a component that can encrypt, send, and receive quanta.
+ * It will ultimately convert data and matter into quanta and back as well.
+ * A stargate machine is composed of multiple rotors.
+ * Each rotor performs one or more operations on the input quanta.
+ * The output quanta may be entirely different from the input quanta, or encrypted.
+ */
 export default class StargateMachine {
     public readonly id: string;
     public readonly rotors: Array<StargateRotor>;
     private channelOpen: boolean;
+    /**
+     * The stargate machine is using a Redux store to manage its state.
+     * The state should be immutable and deterministic.
+     */
     private readonly stateMachine: EnhancedStore;
 
-
+    /**
+     * @description A test reducer for the Redux store.
+     * @param state 
+     * @param action 
+     * @returns 
+     */
     private testReducer(state = [], action: { type: string; }) {
         switch (action.type) {
           default:
@@ -66,5 +83,13 @@ export default class StargateMachine {
        if (this.stateMachine === undefined) {
            return;
        }
+    }
+    public pushQuanta(quanta: Photons): StargateMachine {
+        if (!this.channelOpen) {
+            throw new Error(`Stargate not open`);
+        }
+        console.log(quanta);
+        throw new Error(`Not implemented`);
+        return this;
     }
 }

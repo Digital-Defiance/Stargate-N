@@ -6,6 +6,10 @@ import StargateOperationType from "./operations/stargateOperationType";
 import { getChevronColor } from "../namedHsvColorChevronMap";
 import { NamedHsvColorChevronType } from "../namedHsvColorChevronType";
 
+/**
+ * @description A rotor is a component of the stargate machine that performs one or more operations on the input quanta.
+ * There may be multiple rotors in a stargate machine.
+ */
 export default class StargateRotor {
     public readonly id: string;
     public readonly stargate: StargateMachine;
