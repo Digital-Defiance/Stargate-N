@@ -14,7 +14,6 @@ export default class Quanta {
         this.associatedObject = associatedObject;
         this.sequence = sequence;
         this.creationDate = date;
-        // TODO: add quanta physical properties (eg spin, frequency, etc)
         this.photons = photons;
         // TODO: implement checksum
         this.checksum = "TODO";

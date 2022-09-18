@@ -6,9 +6,9 @@ export default class TransformedQuanta extends Quanta
 {
     public readonly originalId: string;
     public readonly transformationDate: Date;
-    public constructor(originalQuanta: Quanta, photons: Photons, transformationDate: Date | null = null) {
+    public constructor(originalQuanta: Quanta, photons: Photons, sequence: bigint | null = null, transformationDate: Date | null = null) {
         const date = transformationDate === null ? new Date() : transformationDate;
-        super(originalQuanta.associatedObject, originalQuanta.sequence + BigInt(1), photons);
+        super(originalQuanta.associatedObject, sequence !== null ? sequence : originalQuanta.sequence + BigInt(1), photons);
         this.originalId = originalQuanta.id;
         this.transformationDate = date;
     }
