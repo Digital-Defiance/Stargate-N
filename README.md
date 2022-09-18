@@ -104,8 +104,6 @@ Rather than nodes in a network, the "addresses" are somewhat equivalent to a rot
 Enigma would be functionally something like Stargate-N=26, with the number of rotors being the number of "nodes" in the stargate network.
 Notably the engima does some reflection, using rotors in the opposite direction.
 
-Stargate-N=256 is functionally something like an Engima with each rotor having 256 symbols.
-
 The metaphor falls apart a little, but... (WIP!)
 
 It will be a physics based simulated Stargate system capable of transporting mattter, data, or light anywhere in the network which is composed of other nodes that can relay over a separate link or alternate physical medium. Exit nodes are ideally connected to 3D printers, 2D printers, ligt emitters, etc.
@@ -122,7 +120,7 @@ Will keep writing this up...
 :PHOTON:
   * has lambda wavelength, has other properties/spin
 
-Photon enters a rotor who sends the photon through 256 interactions which can shift the hue, change polarization, etc. Each interaction is a recipe pre-denoted by a Chevron/symbol, but itself is a set of settings.
+Photon enters a rotor who sends the photon through N quantum operations. Each interaction is a recipe pre-denoted by a Chevron/symbol, but itself is a set of settings.
 
 Participants in the network must all be aware of these rotor settings. They may be published or they may be kept secret.
 Each rotor on the network is potentially unique.
@@ -168,54 +166,8 @@ This is a research/thought exercise that may not be completed.
 
 ( Stargate ) could be written as a function stargate(iv, data) {}. The IV or initialization vector would give the order and type of the chevrons. Chevrons start at the top and go clockwise around the circle. Each chevron gets as many radians/fractions of a radian as is neecessary to fit the desired number of chevrons.
 
-One of our stargates could have 256 chevron positions, each with 256 possibilities.
+One of our stargates could have R rotors, each with N possibilities.
 One of our stargates may even be more complex.
 
 What if the Chevrons were specific wavelengths/colors of light that needed to be sent in the right order to initialize the stargate?
 What if the event horizon/gate function actually tried to look at the data as if it were light/waves coming through.
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
