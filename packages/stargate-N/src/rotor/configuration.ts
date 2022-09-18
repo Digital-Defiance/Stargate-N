@@ -6,9 +6,11 @@ export default class RotorConfiguration {
     public readonly id: string = randomUUID();
     public readonly chevrons: Array<HSVColorChevron>;
     public readonly lockedChevrons: Array<{ chevron: HSVColorChevron, chevronIndex: number }>;
+    public readonly chevronFunctions: Array<(quanta: any) => any>;
     public constructor(chevrons: Array<HSVColorChevron>, chevronFunctions: Array<(quanta: any) => any>) {
         this.chevrons = chevrons;
         this.lockedChevrons = [];
+        this.chevronFunctions = chevronFunctions;
     }
     public lockChevron(chevron: HSVColorChevron, chevronIndex: number): void {
         if (this.lockedChevrons.length >= this.chevrons.length) {
@@ -20,5 +22,6 @@ export default class RotorConfiguration {
                 throw new Error(`Chevron already locked`);
             }
         }
+        this.lockedChevrons.push({ chevron, chevronIndex });
     }
 }
