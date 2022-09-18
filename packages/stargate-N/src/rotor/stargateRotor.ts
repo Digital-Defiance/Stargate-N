@@ -1,10 +1,8 @@
-import HSVColorChevron from "../hsvColorChevron";
 import StargateMachine from "../stargateMachine";
 import RotorConfiguration from "./rotorConfiguration";
 import { randomUUID } from "crypto";
 import StargateOperationType from "./operations/stargateOperationType";
-import { getChevronColor } from "../namedHsvColorChevronMap";
-import { NamedHsvColorChevronType } from "../namedHsvColorChevronType";
+import StargateOperation from "./operations/stargateOperation";
 
 /**
  * @description A rotor is a component of the stargate machine that performs one or more operations on the input quanta.
@@ -15,12 +13,12 @@ export default class StargateRotor {
     public readonly stargate: StargateMachine;
     public readonly configuration: RotorConfiguration;
     public readonly operations: Array<StargateOperationType>;
-    public readonly chevronList: Array<HSVColorChevron>;
+    public readonly chevronList: Array<StargateOperation>;
     /**
      * list of chevrons in order, starting at 0 degrees.
      * total radians per chevron is 2 * Math.PI / chevronList.length
      */
-    public readonly engagedChevrons: Array<HSVColorChevron>;
+    public readonly engagedChevrons: Array<StargateOperation>;
     public readonly radiansPerChevron: number;
     public constructor(stargate: StargateMachine, configuration: RotorConfiguration) {
         this.id = randomUUID();
@@ -30,7 +28,6 @@ export default class StargateRotor {
             StargateOperationType.NoOperation,
         ]; // TODO: get from configuration
         this.chevronList = [
-            getChevronColor(NamedHsvColorChevronType.Black), // no operation.
         ]; // TODO: get from configuration
         this.radiansPerChevron = 2 * Math.PI / this.chevronList.length;
         this.engagedChevrons = [];

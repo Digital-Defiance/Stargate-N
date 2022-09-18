@@ -1,27 +1,27 @@
 import { randomUUID } from "crypto";
-import HSVColorChevron from "../hsvColorChevron";
+import StargateOperation from "./operations/stargateOperation";
 
 /** This needs to get loaded into the redux store */
 export default class RotorConfiguration {
     public readonly id: string = randomUUID();
-    public readonly chevrons: Array<HSVColorChevron>;
-    public readonly lockedChevrons: Array<{ chevron: HSVColorChevron, chevronIndex: number }>;
+    public readonly chevrons: Array<StargateOperation>;
+    public readonly lockedChevrons: Array<number>;
     public readonly chevronFunctions: Array<(quanta: any) => any>;
-    public constructor(chevrons: Array<HSVColorChevron>, chevronFunctions: Array<(quanta: any) => any>) {
+    public constructor(chevrons: Array<StargateOperation>, chevronFunctions: Array<(quanta: any) => any>) {
         this.chevrons = chevrons;
         this.lockedChevrons = [];
         this.chevronFunctions = chevronFunctions;
     }
-    public lockChevron(chevron: HSVColorChevron, chevronIndex: number): void {
+    public lockChevron(chevronIndex: number): void {
         if (this.lockedChevrons.length >= this.chevrons.length) {
             throw new Error(`Maximum number of chevrons locked`);
         }
         // check if chevron is already locked
         for (const lockedChevron of this.lockedChevrons) {
-            if (lockedChevron.chevron === chevron) {
+            if (lockedChevron === chevronIndex) {
                 throw new Error(`Chevron already locked`);
             }
         }
-        this.lockedChevrons.push({ chevron, chevronIndex });
+        this.lockedChevrons.push(chevronIndex );
     }
 }
