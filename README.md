@@ -1,6 +1,8 @@
 # Stargate-N: Secure Electromagnetic Quanta Interchange
 Also registered for Hackathon 2022: https://hackbox.microsoft.com/project/2021
 
+Code moved to monorepo: https://github.com/Digital-Defiance/nx-monorepo
+
 ![wzCWak0Kydt4AlEaUfNJ--1--P6PE6](https://user-images.githubusercontent.com/3766240/187545363-11be83b7-7275-4da3-85c2-37f5c6d88ed6.jpg)
 ![VKRuD1a0M8MTLlI9PXFk--1--3KQ27](https://user-images.githubusercontent.com/3766240/187508629-26ca6505-662f-4eb3-bfc3-5b560f315eea.jpg)
 ![LTRoxyuwj28aXlXxiagK--1--LMEV9](https://user-images.githubusercontent.com/3766240/187508068-f2898ead-0426-4647-8064-1412bcb7a72a.jpg)
