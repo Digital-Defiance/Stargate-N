@@ -1,7 +1,7 @@
 import Photon from "./photon";
 
-export default class Machine {
-  process(photons: Photon[]): Photon[] {
-    return [...photons]
-  }
+export default abstract class Machine {
+  abstract process(photons: Photon[]): Photon[]
 }
+
+export abstract class Particle { }

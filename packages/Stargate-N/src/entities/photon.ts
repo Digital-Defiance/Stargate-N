@@ -1,8 +1,5 @@
 
 
-type Vector = [number, number, number]
-type UnitVector = [number, number, number]
-
 class Photon {
 
   energy: number;
