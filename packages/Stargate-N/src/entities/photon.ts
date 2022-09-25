@@ -1,7 +1,8 @@
 
 
-class Photon {
 
+
+class Photon {
   energy: number;
   polarization: UnitVector;
   direction: UnitVector;
