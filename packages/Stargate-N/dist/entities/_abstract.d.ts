@@ -1,5 +1,5 @@
 import Photon from "./photon";
-declare type uuid = string;
+export declare type uuid = string;
 export default abstract class Machine {
     id: uuid;
     constructor();
@@ -7,4 +7,3 @@ export default abstract class Machine {
 }
 export declare abstract class Particle {
 }
-export {};

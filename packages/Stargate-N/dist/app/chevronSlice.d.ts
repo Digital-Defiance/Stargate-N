@@ -1,8 +1,7 @@
-import type { PayloadAction } from '@reduxjs/toolkit';
-interface ChevronState {
-    value: any;
+import { uuid } from '../entities/_abstract';
+export interface ChevronState {
+    keys: uuid[];
+    values?: unknown[];
 }
-export declare const chevronSlice: import("@reduxjs/toolkit").Slice<ChevronState, {
-    setState: (state: import("immer/dist/internal").WritableDraft<ChevronState>, action: PayloadAction<any>) => void;
-}, "chevronSlice">;
-export {};
+declare const _default: import("redux").Reducer<ChevronState, import("redux").AnyAction>;
+export default _default;
