@@ -30,14 +30,14 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://user-images.githubusercontent.com/3766240/187545363-11be83b7-7275-4da3-85c2-37f5c6d88ed6.jpg">
+    <img src="https://user-images.githubusercontent.com/3766240/187545363-11be83b7-7275-4da3-85c2-37f5c6d88ed6.jpg" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Stargate-N</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Secure Electromagnetic Quanta Interchange
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
@@ -83,18 +83,46 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+This is a concept still undergoing design. Contents are disheveled and constantly being updated as the idea takes shape.
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+![wzCWak0Kydt4AlEaUfNJ--1--P6PE6](https://user-images.githubusercontent.com/3766240/187545363-11be83b7-7275-4da3-85c2-37f5c6d88ed6.jpg)
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
 
-Use the `BLANK_README.md` to get started.
+Think of Stargate-N as a quantum enigma machine. EM/Photons go in, rotor presets perform prescribed manipulations on the quanta and pass it along. At the end of the journey the quanta may have transformed from red light to invisible EM quanta.
+
+
+![Dream_TradingCard](https://user-images.githubusercontent.com/3766240/187551924-cf54edc0-8d57-40ee-977e-7e6e69e33e51.jpg)
+
+
+
+
+
+
+The primary conceptual differences between the enigma and the stargate:
+  * The engima operated on 26 symbols with a number of rotor presets that were kept secret
+  * The stargate operates on infinitely many symbols, however we find use in an 8-bit/256 symbol stargate
+  * Each rotor in the stargate network may be connected by any means
+    * direct code
+    * network code / interconnects
+    * software defined radio / interconnects
+  * The final rotor may not be located in the same place or time (delay, at a minimum) as the original rotor.
+  * Loopbacks and finite loops are permitted (excepts infinite loops)
+
+The process effectively both encrypts and transports the input quanta.
+
+Processes must be developed to scan 1D, 2D, 3D, and higher order objects and data.
+However the process is the same:
+  1. Scan and/or represent an input object as ordered EM spectra.
+  2. configure the startgate network in a preset manner
+  3. objects are transmuted and shifted through space and time as they go through each rotor
+  4. objects are reconstituted into data, printed matter, 3D printer matter, 3D+ printed biomatter, etc
+  5. some objects may be able to be destroyed on the source or destination depending on success, error, and other interlocks
+
+The Stargate Machine is a state machine, managed by a Redux store.
+
+![VKRuD1a0M8MTLlI9PXFk--1--3KQ27](https://user-images.githubusercontent.com/3766240/187508629-26ca6505-662f-4eb3-bfc3-5b560f315eea.jpg)
+![LTRoxyuwj28aXlXxiagK--1--LMEV9](https://user-images.githubusercontent.com/3766240/187508068-f2898ead-0426-4647-8064-1412bcb7a72a.jpg)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
